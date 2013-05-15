@@ -22,7 +22,7 @@ $ vagrant up --provider=aws
 
 You can use your regular vagrant commands as usual e.g
 
-``` ruby ssh into the EC2 instance 
+```  
 $ vagrant ssh
 ```
 
