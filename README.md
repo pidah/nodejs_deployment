@@ -9,14 +9,14 @@ To use, do the following -
 2. Install the vagrant-aws plugin
 3. Then clone this repository as follows -
 
-``` ruby clone nodejs_deployment repository https://github.com/pidah/nodejs_deployment
+``` 
 $ git clone git@github.com:pidah/nodejs_deployment.git
 ```
 4. Update/Modify your AWS credentials as described in [http://www.devopsdiary.com](http://www.devopsdiary.com/blog/2013/05/07/automated-deployment-of-aws-ec2-instances-with-vagrant-and-puppet/)
 
 5. Then run the following to launch the instance -
 
-``` ruby launch EC2 instance https://github.com/mitchellh/vagrant-aws
+```
 $ vagrant up --provider=aws
 ```
 
