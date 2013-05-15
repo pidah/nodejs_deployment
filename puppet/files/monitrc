@@ -1,0 +1,12 @@
+#!monit
+set logfile /opt/node/monit_app.log
+
+check process nodejs with pidfile "/var/run/awesome-app.pid"
+    start program = "/sbin/start app"
+    stop program  = "/sbin/stop app"
+    if failed port 3000 protocol HTTP
+        request /
+        with timeout 2 seconds
+        then restart
+    if cpu > 80% for 10 cycles then restart
+    if 3 restarts within 10 cycles then timeout

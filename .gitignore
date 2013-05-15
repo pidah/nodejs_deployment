@@ -1,0 +1,10 @@
+*.pid
+pids
+logs
+npm-debug.log
+node_modules
+awesome-app.sys.log
+nginx_app.log
+node_app.log
+monit_app.log
+.vagrant/
