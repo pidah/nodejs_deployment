@@ -3,10 +3,10 @@ Vagrant.configure("2") do |config|
   config.vm.box_url = "https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box"
   config.vm.synced_folder ".", "/vagrant", id: "vagrant-root"
   config.vm.provider :aws do |aws, override|
-    aws.keypair_name = "web"
-    override.ssh.private_key_path = "~/.ssh/web.pem"
+    aws.keypair_name = "development"
+    override.ssh.private_key_path = "~/.ssh/development.pem"
     aws.instance_type = "t1.micro"
-    aws.security_groups = "web"
+    aws.security_groups = "development"
     aws.ami = "ami-c5afc2ac"
     override.ssh.username = "ubuntu"
     aws.tags = {
