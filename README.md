@@ -22,7 +22,7 @@ $ git clone git@github.com:pidah/nodejs_deployment.git
 ```
 Then source the ~/.profile to make the variables available in the current shell session
 
-``` bash source the ~/.profile file
+```  
  source ~/.profile
 ```
 
