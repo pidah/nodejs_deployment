@@ -23,7 +23,7 @@ $ git clone git@github.com:pidah/nodejs_deployment.git
 Then source the ~/.profile to make the variables available in the current shell session
 
 ```  
- source ~/.profile
+$ source ~/.profile
 ```
 
 - Then run the following to launch the instance -
